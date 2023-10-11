@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <main.h>
 /**
- * main - creates a loop to print the alphabet
+ * print_alphabet - print the alphabet
  *
  * Return: 0 (sucess)
  */
-int main(void)
+void print_alphabet(void)
 {
 	char i;
 
