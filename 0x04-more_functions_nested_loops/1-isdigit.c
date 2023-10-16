@@ -1,6 +1,6 @@
-include "main.h"
+#include "main.h"
 /**
- * id_digit - checks if c is a digit
+ * is_digit - checks if c is a digit
  *
  * @c: character to check
  *
