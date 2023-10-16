@@ -11,9 +11,9 @@ void reset_to_98(int *n);
 
 /**
  * swap_int - swaps two integer values
- * 
+ *
  * @a: first integer
- * 
+ *
  * @b: second integer
  */
 void swap_int(int *a, int *b);
@@ -28,7 +28,7 @@ void swap_int(int *a, int *b);
  */
 int _strlen(char *s);
 
- 
+
 
 /**
  * _puts - function that prints a string followed by a new line
@@ -87,9 +87,9 @@ void print_array(int *a, int n);
  * _strcpy - main function
  *
  * @dest: destination
- * 
+ *
  * @src: source
- * 
+ *
  * Return: return value
  */
 char *_strcpy(char *dest, char *src);
@@ -104,4 +104,4 @@ char *_strcpy(char *dest, char *src);
  */
 int _atoi(char *s);
 
-
+#endif
