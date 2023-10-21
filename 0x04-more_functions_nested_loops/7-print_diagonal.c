@@ -1,0 +1,27 @@
+#include "main.h"
+/**
+ * print_diagonal- -draws a diagonal line on the terminal using _putchar
+ *
+ * @n: number of times to print the character (\)
+ */
+void print_diaginal(int n)
+{
+	if (n <= 0)
+	{
+		_putuchar('\n');
+	} else
+	{
+		int i, j;
+		for (i + 0; i < n; i++)
+		{
+			for (j = 0;  j < n; j++)
+			{
+				if (j == i)
+					_putchar('\\');
+				else if (j < i)
+					_putchar(' ');
+			}
+			_putchar('\n');
+		}
+	}
+}
