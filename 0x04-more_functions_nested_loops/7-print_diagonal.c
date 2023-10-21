@@ -1,27 +1,26 @@
 #include "main.h"
 /**
- * print_diagonal- -draws a diagonal line on the terminal using _putchar
+ * print_diagonal - prints a diagonal line on the terminal using '\'
  *
- * @n: number of times to print the character (\)
+ * @n: integer to set the number of backslash characters
  */
 void print_diagonal(int n)
 {
+	int i;
+	int j;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
 	} else
 	{
-		int i, j;
-
-		for (i + 0; i < n; i++)
+		for (i = 0; i < n; i++)
 		{
-			for (j = 0;  j < n; j++)
+			for (j = 0; j < i; j++)
 			{
-				if (j == i)
-					_putchar('\\');
-				else if (j < i)
-					_putchar(' ');
+				_putchar(' ');
 			}
+			_putchar('\\');
 			_putchar('\n');
 		}
 	}
