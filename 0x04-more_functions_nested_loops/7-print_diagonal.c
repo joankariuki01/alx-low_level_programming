@@ -4,14 +4,15 @@
  *
  * @n: number of times to print the character (\)
  */
-void print_diaginal(int n)
+void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
-		_putuchar('\n');
+		_putchar('\n');
 	} else
 	{
 		int i, j;
+
 		for (i + 0; i < n; i++)
 		{
 			for (j = 0;  j < n; j++)
