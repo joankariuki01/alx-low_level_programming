@@ -1,26 +1,44 @@
 #include "main.h"
-
 /**
- * print_number - prints an integer;
+ * print_number - prints  and integer
  *
- * @n: integer to print;
+ * @n:integer
+ *
  */
-
 void print_number(int n)
 {
-	unsigned int n1;
+	unsigned int abs;
+	int mult = 1;
+	unsigned int abSCount;
+	int i;
+	int c = 0;
 
+	if (n == 0)
+	{
+		_putchar('0');
+	}
 	if (n < 0)
 	{
-		n1 = -n;
 		_putchar('-');
-	} else
-	{
-		n1 = n;
+		n += 1;
+		n *= -1;
+		n++;
 	}
+	abs = n;
+	abSCount = n;
 
-	if (n1 / 10)
-		print_number(n1 / 10);
+	while (abSCount > 0)
+	{
+		abSCount /= 10;
+		c++;
+	}
+	for (i = 0; i < c - 1; i++)
+		mult *= 10;
 
-	_putchar((n1 % 10) + '0');
+	for (i = 0; i < c; i++)
+	{
+		_putchar((abs / mult) + '0');
+		abs = abs % mult;
+		mult /= 10;
+	}
 }
