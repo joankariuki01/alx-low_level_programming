@@ -1,27 +1,26 @@
 #include "main.h"
-
 /**
- * print_square - prints a square on the terminal using # and _putchar
+ * print_square - prints square on the terminal using '#'
  *
- * @n: integer to determine size of the square
+ * @size: integer to set number of '#' characters
  */
-void print_square(int n)
+void print_square(int size)
 {
-	int x, y;
+	int i;
+	int j;
 
-	y = 0;
-
-	if(n < 1)
-		_putchar('\n');
-	while (y < n)
+	if (size <= 0)
 	{
-		x =0 ;
-		while (x < n)
-		{
-			_putchar('#');
-			x++;
-		}
 		_putchar('\n');
-		y++;
+	} else
+	{
+		for (i = 0; i < size; i++)
+		{
+			for (j = 0; j < size; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
