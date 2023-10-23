@@ -10,17 +10,17 @@
  * 
  * @n: number of bytes
  * 
- * Return: pointer to the memory area s 
+ * Return: pointer to the memory area s
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-    unsigned int count = 0; 
+    unsigned int count = 0;
 
     while (count < n)
     {
         s[count] = b;
-        count ++;
+        count++;
     }
     return (s);
 }
