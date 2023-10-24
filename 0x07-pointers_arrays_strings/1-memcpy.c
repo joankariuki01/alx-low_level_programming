@@ -13,9 +13,11 @@
  * Return: pointer to the memory area s
 */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-        while (n--)
-                *(s + n) = b;
-        return (s);
+	while (n--)
+	{
+		*(dest + n) = *(src + n);
+	}
+	return (dest);
 }
