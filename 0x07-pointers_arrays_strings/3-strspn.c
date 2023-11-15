@@ -13,12 +13,28 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
+	int i;
+	int j;
+	int c;
 
-	while (*s && _strchr(accept, *s))
+	i = 0;
+	c = 0;
+
+	while (s[i] != '\0')
 	{
-		s++;
+		j = 0;
+		while (accept[j] != '\0')
+		{
+			if (s[i] == accept[j])
+			{
+				c++;
+				break;
+			}
+			j++;
+		}
+		if (accept[j] == '\0')
+			break;
 		i++;
 	}
-	return (i);
+	return (c);
 }
