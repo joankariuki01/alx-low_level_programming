@@ -3,16 +3,16 @@
 #include "variadic_functions.h"
 
 /**
- * print_string - prints a string, followed by a new line
+ * print_strings - prints a string, followed by a new line
  *
- * @separator: string to be printed between the strings
+ * @separator: string printed between the strings
  *
  * @n: number of strings passed to the function
  *
- * @...: variable number of strigns to be printed
+ * @...: variable number of strings to be printed
  *
  */
-void print_string(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list strings;
 	char *str;
