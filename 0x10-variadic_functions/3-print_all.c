@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>i
 #include <stdarg.h>
 #include <stdlib.h>
 
@@ -29,6 +29,9 @@ void print_all(const char * const format, ...)
 				break;
 			case 'i':
 				printf("%s%d", separator, va_arg(args, int));
+				break;
+			case 'f':
+				printf("s%f",separator, va_args(args, double));
 				break;
 			case 's':
 				s = va_args(args, char *);
