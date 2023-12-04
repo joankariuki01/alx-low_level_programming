@@ -28,21 +28,19 @@ int main(int argc, char *argv[])
 
 	if (!func)
 	{
-		print("Error\n");
+		printf("Error\n");
 		exit(99);
 	}
 
-	o = *argc[2];
+	o = *argv[2];
 
 	if ((o == '/' || o == '%') && arg2 == 0)
 	{
-		printf("Error\n")
-			exit(100);
+		printf("Error\n");
+		exit(100);
 	}
 
 	result = func(arg1, arg2);
-
-	printf("%d\n", result);
 
 	printf("%d\n", result);
 
