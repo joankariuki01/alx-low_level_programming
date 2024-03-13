@@ -1,1 +1,1 @@
-Solutions to tasks  in project Doubly Linked Lists
+Solutions to projects on doubly linked lists
